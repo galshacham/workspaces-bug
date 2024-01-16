@@ -9,5 +9,14 @@
     "postinstall": "echo hello world!"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongodb-memory-server": "^9.1.5"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "4.4.23",
+      "downloadDir": "./node_modules/.cache/mongodb-memory-server"
+    }
+  }
 }

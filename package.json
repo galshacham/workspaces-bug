@@ -12,5 +12,6 @@
   "workspaces": [
     "packages/one",
     "packages/two"
-  ]
+  ],
+  "dependencies": {}
 }
