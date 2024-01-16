@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run -w packages/two specific-post-install"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,10 @@
     "packages/one",
     "packages/two"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "config": {
+    "mongodbMemoryServer": {
+      "disablePostinstall": true
+    }
+  }
 }
